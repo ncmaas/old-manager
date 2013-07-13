@@ -16,7 +16,7 @@ test:
   timeout: 5000
   username: nmradar
   password:
-  port: 5432
+  port: 5433
   host: localhost
 
 production:
