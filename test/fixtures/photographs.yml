@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyString
+  uploaded_by: 1
+  title: MyString
+  public: 1
+
+two:
+  description: MyString
+  uploaded_by: 1
+  title: MyString
+  public: 1

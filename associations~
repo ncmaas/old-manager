@@ -1,0 +1,18 @@
+Associations:
+
+Class has many Users (SOB_CLASS field)
+Class has many albums, album has many classes
+
+album has many recordings, recording has 1 album
+Album has many arrangements, arrangements have many albums
+(Album has photograph?)
+
+PHotograph has one history article, history article has many photographs
+
+User has many positions and positions has many users
+User has many albums and album has many users
+User has many stories, story has many users
+User has many history articles, history articles have many users
+User has many arrangements, arrangement has many users
+User has many recordings, recording has many users
+User has many photos, photo has many users

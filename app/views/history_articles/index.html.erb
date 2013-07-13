@@ -1,0 +1,29 @@
+<h1>Listing history_articles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @history_articles.each do |history_article| %>
+      <tr>
+        <td><%= history_article.title %></td>
+        <td><%= history_article.description %></td>
+        <td><%= link_to 'Show', history_article %></td>
+        <td><%= link_to 'Edit', edit_history_article_path(history_article) %></td>
+        <td><%= link_to 'Destroy', history_article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New History article', new_history_article_path %>

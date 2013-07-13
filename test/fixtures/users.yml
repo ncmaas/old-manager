@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  username: MyString
+  yaleyear: 1
+  college: MyString
+  sobclass: 1
+  voicepart: MyString
+  major: MyString
+
+two:
+  name: MyString
+  email: MyString
+  username: MyString
+  yaleyear: 1
+  college: MyString
+  sobclass: 1
+  voicepart: MyString
+  major: MyString

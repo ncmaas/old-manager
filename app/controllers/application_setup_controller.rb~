@@ -1,0 +1,22 @@
+class ApplicationSetupController < ApplicationController
+  skip_filter :first_time_user
+
+  before_filter :new_admin_user
+  before_filter :redirect_if_not_first_run
+
+  def new_admin_user
+    if user_signed_in?
+       @user = User.new
+     else
+       redirect_to users#new
+     end
+   end
+
+  private
+    def redirect_if_not_first_run
+      if User.all.count > 1
+        flash[:error] = "The setup wizard can only be run on first launch."
+        redirect_to root_path
+      end
+    end
+end

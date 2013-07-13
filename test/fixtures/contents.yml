@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  brief_description: MyString
+  title: MyString
+  public: 1
+
+two:
+  brief_description: MyString
+  title: MyString
+  public: 1

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyString
+  uploaded_by: 
+  type: 
+
+two:
+  description: MyString
+  uploaded_by: 
+  type: 

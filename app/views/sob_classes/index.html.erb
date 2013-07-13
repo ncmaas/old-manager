@@ -1,0 +1,29 @@
+<h1>Listing sob_classes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sob_classes.each do |sob_class| %>
+      <tr>
+        <td><%= sob_class.title %></td>
+        <td><%= sob_class.description %></td>
+        <td><%= link_to 'Show', sob_class %></td>
+        <td><%= link_to 'Edit', edit_sob_class_path(sob_class) %></td>
+        <td><%= link_to 'Destroy', sob_class, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sob class', new_sob_class_path %>

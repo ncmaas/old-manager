@@ -1,4 +1,22 @@
 OldManager::Application.routes.draw do
+  resources :anecdotes
+
+  resources :sob_classes
+
+  resources :history_articles
+
+  resources :albums
+
+  resources :positions
+
+  resources :arrangements
+
+  devise_for :users do
+   get "signup", :to => "users/#new"
+ end
+  resources :users
+  root :to => "users#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

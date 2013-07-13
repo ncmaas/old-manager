@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @arrangement.title %>
+</p>
+
+<p>
+  <strong>Uploaded by:</strong>
+  <%= @arrangement.uploaded_by %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @arrangement.description %>
+</p>
+
+<p>
+  <strong>Public:</strong>
+  <%= @arrangement.public %>
+</p>
+
+<%= link_to 'Edit', edit_arrangement_path(@arrangement) %> |
+<%= link_to 'Back', arrangements_path %>
