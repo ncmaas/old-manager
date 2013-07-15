@@ -11,7 +11,9 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
 
-                   has_and_belongs_to_many :albums
+
+
+has_and_belongs_to_many :albums
 has_and_belongs_to_many :arrangements
 has_and_belongs_to_many :positions
 has_and_belongs_to_many :anecdotes

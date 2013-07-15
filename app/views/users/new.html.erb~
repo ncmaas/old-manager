@@ -1,6 +1,10 @@
 <h1>New user</h1>
 
 <%= simple_form_for @user do |f| %>
+
+  <%= f.input :password, hint: 'No special characters.' %>
+  <%= f.input :confirm_password  %>
+
   <%= f.input :title, collection: ["Mr.", "Dr.", "Prof."] %>
   <%= f.input :pref_first_name, label: "Preferred first name" %>
   <%= f.input :name, label: 'First name' %>

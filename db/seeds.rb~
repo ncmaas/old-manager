@@ -6,6 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-for i in 1900..2013
+for (i=1900;i<2013;i++)
    SobClass.create([{title: i},{description: "The class of this year"}])
 end

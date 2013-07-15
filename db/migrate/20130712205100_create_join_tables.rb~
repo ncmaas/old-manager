@@ -1,3 +1,6 @@
+class CreateJoinTables < ActiveRecord::Migration
+	def change
+
 create_table :albums_sob_classes, :id => false do |t|
   t.references :album, :null => false
   t.references :sob_class, :null => false
@@ -52,5 +55,8 @@ end
 add_index(:photographs_users, [:photograph_id, :user_id], :unique => true)
 
 
+
+end
+end
 
 

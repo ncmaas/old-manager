@@ -3,6 +3,7 @@
 <%= simple_form_for @user do |f| %>
 
   <%= f.input :password, hint: 'No special characters.' %>
+  <%= f.input :password_confirmation  %>
 
   <%= f.input :title, collection: ["Mr.", "Dr.", "Prof."] %>
   <%= f.input :pref_first_name, label: "Preferred first name" %>

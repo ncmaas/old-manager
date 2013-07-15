@@ -54,6 +54,12 @@ create_table :photographs_users, :id => false do |t|
 end
 add_index(:photographs_users, [:photograph_id, :user_id], :unique => true)
 
+create_table :albums_users, :id => false do |t|
+  t.references :album, :null => false
+  t.references :user, :null => false
+end
+add_index(:albums_users, [:album_id, :user_id], :unique => true)
+
 end
 end
 
